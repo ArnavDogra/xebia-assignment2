@@ -1,193 +1,124 @@
-# User Roles and Permissions
-
-This document defines the primary user roles within the Internship Management Platform, outlining their responsibilities, permissions, and typical user journeys.
-
----
-
-# Student
-
-## Responsibilities
-
-* Maintain an up-to-date and accurate profile, including resume, skills, and portfolio links.
-* Search and apply for relevant internship opportunities.
-* Prepare for and attend scheduled interviews.
-* Accept or decline internship offers.
-
-## Permissions
-
-* **Create/Edit/Delete:** Own profile, portfolio, and resumes.
-* **View:** Available internship postings, application statuses, interview schedules.
-* **Perform:** Apply for jobs, withdraw applications, message recruiters (if enabled).
-
-## User Journey
-
-### 1. Onboarding
-
-Registers on the platform using college email, fills out profile, and uploads resume.
-
-### 2. Discovery
-
-Browses the dashboard for recommended internships or searches using filters (domain, location, stipend).
-
-### 3. Application
-
-Applies to selected internships.
-
-### 4. Tracking
-
-Monitors the application status:
-
-Applied → Under Review → Shortlisted → Interview → Offered/Rejected
-
-### 5. Action
-
-Accepts the final offer and updates the college admin via the platform.
-
----
-
-# Recruiter / Company
-
-## Responsibilities
-
-* Create and manage the company profile.
-* Post detailed internship opportunities.
-* Review student applications and shortlist candidates.
-* Schedule interviews and communicate hiring decisions.
-
-## Permissions
-
-* **Create/Edit/Delete:** Company profile, internship postings.
-* **View:** Applicant profiles, resumes, and platform analytics related to their postings.
-* **Perform:** Change applicant status, send messages/emails to applicants, schedule interviews.
-
-## User Journey
-
-### 1. Onboarding
-
-Registers the company and gets verified by the platform admin.
-
-### 2. Posting
-
-Creates a new internship listing detailing requirements, stipend, and duration.
-
-### 3. Review
-
-Accesses the Applicant Tracking System (ATS) dashboard to review incoming student applications.
-
-### 4. Processing
-
-Moves candidates through stages (Shortlist, Interview) and schedules interviews.
-
-### 5. Hiring
-
-Extends an offer to selected candidate(s) and closes the posting.
-
----
-
-# College Administrator
-
-## Responsibilities
-
-* Verify student and recruiter registrations.
-* Monitor overall placement statistics and student participation.
-* Provide support or intervene in case of disputes.
-* Manage platform-wide announcements.
-
-## Permissions
-
-* **Create/Edit/Delete:** System settings, announcements, user accounts (admin override).
-* **View:** All student profiles, all job postings, comprehensive analytics, and reports.
-* **Perform:** Approve/Reject companies, generate placement reports, export data.
-
-## User Journey
-
-### 1. Login
-
-Accesses the secure admin dashboard.
-
-### 2. Verification
-
-Reviews pending approvals for new companies or students and grants access.
-
-### 3. Monitoring
-
-Checks the analytics dashboard to see how many students have applied, been shortlisted, or placed.
-
-### 4. Reporting
-
-Generates monthly placement reports for college management.
-
----
-
-# Role-Permission Matrix
-
-| Feature / Action      | Student | Recruiter | College Admin |
-| --------------------- | ------- | --------- | ------------- |
-| Manage Own Profile    | ✅       | ✅         | ✅             |
-| View Internships      | ✅       | ✅ (Own)   | ✅ (All)       |
-| Post Internships      | ❌       | ✅         | ❌             |
-| Apply for Internships | ✅       | ❌         | ❌             |
-| Review Applications   | ❌       | ✅         | ✅ (Read-only) |
-| Schedule Interviews   | ❌       | ✅         | ❌             |
-| Verify Users          | ❌       | ❌         | ✅             |
-| View System Analytics | ❌       | ❌         | ✅             |
-| Export Reports        | ❌       | ❌         | ✅             |
-
----
-
 # Team Members and Contributions
 
-This project was collaboratively prepared by the following team members.
-
-| Name            | Email                                                         | Assigned Role                         | Contributions                                                                                                                                                              |
-| --------------- | ------------------------------------------------------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Arnav Dogra** | [adogra_be23@thapar.edu](mailto:adogra_be23@thapar.edu)       | Project Lead & System Architect       | Led project planning, defined system architecture, prepared user role definitions, designed platform structure, coordinated documentation, and finalized MVP requirements. |
-| **Divya**       | [divue2003@gmail.com](mailto:divue2003@gmail.com)             | Business Analyst & Documentation Lead | Gathered requirements, documented platform features, refined user journeys, and reviewed deliverables for consistency and completeness.                                    |
-| **Aryan**       | [e23cseu0550@bennet.edu.in](mailto:e23cseu0550@bennet.edu.in) | Workflow & Process Designer           | Designed internship workflows, recruiter hiring process, application lifecycle, and contributed to workflow documentation.                                                 |
-| **Akash**       | [akashivaleena@gmail.com](mailto:akashivaleena@gmail.com)     | UI/UX & Wireframe Designer            | Developed wireframes, dashboard layouts, screen flow designs, and contributed to user experience planning.                                                                 |
+This project was collaboratively prepared by a team of four members. Each member was assigned specific responsibilities to ensure the successful completion of the Internship Management Platform design proposal, documentation, workflows, wireframes, and MVP planning.
 
 ---
 
-# Team Responsibilities Summary
+## Team Overview
+
+| Name            | Email                                                         | Assigned Role                         |
+| --------------- | ------------------------------------------------------------- | ------------------------------------- |
+| **Arnav Dogra** | [adogra_be23@thapar.edu](mailto:adogra_be23@thapar.edu)       | Project Lead & System Architect       |
+| **Divya**       | [divue2003@gmail.com](mailto:divue2003@gmail.com)             | Business Analyst & Documentation Lead |
+| **Aryan**       | [e23cseu0550@bennet.edu.in](mailto:e23cseu0550@bennet.edu.in) | Workflow & Process Designer           |
+| **Akash**       | [akashivaleena@gmail.com](mailto:akashivaleena@gmail.com)     | UI/UX & Wireframe Designer            |
+
+---
+
+# Detailed Contributions
 
 ## Arnav Dogra
 
-* Project planning and coordination
-* System architecture design
-* User role definition
-* MVP planning
-* GitHub repository management
+### Role: Project Lead & System Architect
 
-## Divya
+Arnav was responsible for overseeing the overall direction and structure of the project. His primary contribution was ensuring that all project components aligned with the problem statement and formed a cohesive platform design.
 
-* Requirement gathering
-* Feature documentation
-* User stories preparation
-* Documentation review
+### Key Contributions
 
-## Aryan
-
-* Workflow design
-* Process mapping
-* Internship lifecycle modeling
-* Application flow documentation
-
-## Akash
-
-* Wireframe preparation
-* Dashboard design concepts
-* UI/UX planning
-* Screen layout documentation
+* Led project planning and task allocation among team members.
+* Designed the overall architecture and structure of the Internship Management Platform.
+* Defined the core objectives, scope, and vision of the platform.
+* Identified key stakeholders and system requirements.
+* Prepared the MVP definition and prioritized platform features.
+* Coordinated the integration of documentation, workflows, and wireframes into a unified project submission.
+* Managed repository organization and final project compilation.
+* Conducted final review and quality assurance of all deliverables.
 
 ---
 
-## Project Information
+## Divya
+
+### Role: Business Analyst & Documentation Lead
+
+Divya focused on understanding user needs and translating them into well-defined platform requirements and documentation. She played a major role in ensuring that the platform addressed the needs of students, recruiters, and college administrators.
+
+### Key Contributions
+
+* Analyzed the problem statement and identified functional requirements.
+* Documented key platform features and business requirements.
+* Defined user journeys and platform use cases.
+* Prepared detailed descriptions of system functionalities.
+* Assisted in drafting project documentation and reports.
+* Reviewed project content for consistency, readability, and completeness.
+* Helped organize deliverables into a professional and submission-ready format.
+* Contributed to feature prioritization and scope definition.
+
+---
+
+## Aryan
+
+### Role: Workflow & Process Designer
+
+Aryan was responsible for designing the operational flow of the platform and mapping interactions between different stakeholders. His work ensured that the system processes were logical, efficient, and easy to understand.
+
+### Key Contributions
+
+* Designed end-to-end internship application workflows.
+* Created process flows for student onboarding and internship applications.
+* Developed recruiter workflows covering internship posting, candidate review, and hiring.
+* Designed administrative workflows for verification, monitoring, and reporting.
+* Prepared workflow diagrams illustrating system interactions.
+* Identified decision points and process transitions within the platform.
+* Ensured that workflows aligned with real-world recruitment and placement processes.
+* Contributed to documenting operational procedures and platform behavior.
+
+---
+
+## Akash
+
+### Role: UI/UX & Wireframe Designer
+
+Akash was responsible for conceptualizing the visual structure and user experience of the platform. His work focused on creating intuitive and user-friendly interfaces for all stakeholders.
+
+### Key Contributions
+
+* Designed low-fidelity wireframes for key platform screens.
+* Planned dashboard layouts for students, recruiters, and administrators.
+* Created navigation flow concepts for seamless user interaction.
+* Designed the landing page structure and content hierarchy.
+* Proposed user interface elements to improve usability and accessibility.
+* Organized screen layouts to ensure logical information flow.
+* Contributed to user experience planning and interface consistency.
+* Assisted in documenting visual design concepts and wireframe explanations.
+
+---
+
+# Collaborative Team Efforts
+
+In addition to their individual responsibilities, all team members collectively contributed to:
+
+* Brainstorming platform features and functionalities.
+* Reviewing and refining project deliverables.
+* Validating workflows and wireframe designs.
+* Discussing feasibility and implementation considerations.
+* Ensuring alignment between project objectives and proposed solutions.
+* Preparing the final documentation package for submission.
+
+---
+
+# Project Summary
 
 **Project Title:** Internship Management Platform
 
+**Project Type:** System Design and Documentation Proposal
+
 **Team Size:** 4 Members
 
-**Submission Type:** Documentation-Based Design Proposal
+**Prepared By:**
 
-**Prepared By:** Team Internship Management Platform
+* Arnav Dogra
+* Divya
+* Aryan
+* Akash
 
+The team collaboratively designed an Internship Management Platform aimed at streamlining internship discovery, application management, recruiter hiring processes, and college-level monitoring through a centralized digital platform.
